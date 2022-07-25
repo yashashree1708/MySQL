@@ -1,8 +1,16 @@
-create table Estudent
-(ST_RN int primary key,
-SNAme Varchar(25) Not Null,
-Addr char(35),
-Age Smallint(2) Unsigned,
-STRM Varchar(5) Not Null Default "BCOM",
-F_PD Decimal(9,2),
-Sms Boolean);
+USE master;
+GO
+CREATE DATABASE Employees ON(
+NAME Employees dat,-
+FILENAME='<VALID PATH>Employeesdat.mdf¹,
+SIZE=10,
+MAXSIZE 50,
+FILEGROWTH=5)
+         =
+LOG ON(NAME Employees_log,
+FILENAME
+30
+              <VALID PATH>Employeeslog.ldf',
+SIZE SMB,
+MAXSIZE=25MB,
+FILEGROWTH=5MB);
